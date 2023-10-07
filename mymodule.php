@@ -27,22 +27,6 @@ class MyModule extends Module {
         }
     }
 
-//    public function install()
-//    {
-//        if (shop::isFeatureActive()) {
-//            shop::setContext(shop::CONTEXT_ALL);
-//        }
-//
-//        if (!parent::install() ||
-//            !$this->registerHook('leftColumn') ||
-//            !$this->registerHook('header') ||
-//            !configuration::updateValue('MYMODULE_NAME', 'my friend')
-//          ) {
-//            return false;
-//        }
-//        return true;
-//    }
-
     public function install()
     {
         if (Shop::isFeatureActive())
